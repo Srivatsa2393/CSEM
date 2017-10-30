@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/arrays\\filter.js"
+            "program": "${workspaceFolder}/objects\\object-literal.js"
         }
     ]
 }

@@ -13,14 +13,14 @@ const documents = [
 // [ [ 3, [ 'Hello', 'world' ] ],
 //   [ 1, [ 'Hello', 'foo' ] ],
 //   [ 5, [ 'foo', 'bar', 'foo' ] ] ]
-let wordArray; // TODO
-
+let wordArray = documents.map(item => [item[1], item[0].split(" ")]); // TODO
+console.log(wordArray);
 // Use Array.map() to transform the previous array into this:
 // [ [ [ 'Hello', 3 ], [ 'world', 3 ] ],
 //   [ [ 'Hello', 1 ], [ 'foo', 1 ] ],
 //   [ [ 'foo', 5 ], [ 'bar', 5 ], [ 'foo', 5 ] ] ]
-let wordMap; // TODO
-
+let wordMap = wordArray.map((item) => item[1].map((childItem) => [childItem, item[0]])); // TODO
+console.log(wordMap);
 // Flatten the array that the last step produced by using Array.reduce()
 // and Array.concat()
 // The resulting array should look like this:
@@ -31,8 +31,13 @@ let wordMap; // TODO
 //   [ 'foo', 5 ],
 //   [ 'bar', 5 ],
 //   [ 'foo', 5 ] ]
-let flatWordMap; // TODO
-
+let flatWordMap = wordMap.reduce((prev, cur) => prev.concat(cur),[]); // TODO
+console.log(flatWordMap);
 // Use Array.reduce() to produce this final result:
 // { Hello: 4, world: 3, foo: 11, bar: 5 }
-let weightedWordCount; // TODO
+let weightedWordCount = flatWordMap.reduce((prev, cur) => {
+  let word = cur[0];
+  prev[word] = (prev[word] || 0) + cur[1];
+  return prev;
+},{}); // TODO
+console.log(weightedWordCount);
