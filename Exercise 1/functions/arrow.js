@@ -10,9 +10,7 @@ var hotelChain = {
   _name: 'Vulcan Inn',
   _hotels: [{ location: 'Mars' }, { location: 'Jupiter' }],
   listHotels() {
-    this._hotels.forEach(function (h) {
-      console.log(this._name + ' ' + h.location);
-    },this);
+    this._hotels.forEach((h) => { console.log(this._name + ' ' + h.location) }, this)
   },
 };
 
