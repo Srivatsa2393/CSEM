@@ -39,7 +39,7 @@ LoudCat.prototype.speak = function () {
     return this.meow;
   }
 }
-Cat.prototype.constructor = Cat;
+LoudCat.prototype.constructor = LoudCat;
 let loudCat = new LoudCat(true, "meowww");
 console.log(loudCat.speak());
 loudCat.loud = false;
