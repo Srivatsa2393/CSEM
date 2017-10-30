@@ -18,5 +18,21 @@ var hotelChain = {
 
 hotelChain.listHotels();
 
+//ES2015 implementation
+const hotelChain = {
+_name: 'Vulcan Inn',
+_hotels: [
+	{  location: 'Mars' },
+  { location: 'Jupiter' }
+],
+listHotels() {
+	this._hotels.forEach((h) => {
+  	return console.log(this._name + ' ' + h.location);
+  },this);
+}
+};
+
+hotelChain.listHotels();
+
 // undefined Mars
 // undefined Jupiter
