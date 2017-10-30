@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/objects/flight-es2015.js"
+            "program": "${workspaceFolder}/async/promise-heaven.js"
         }
     ]
 }

@@ -22,9 +22,9 @@ class FastMarsFlight extends MarsFlight {
         super(outbounddate, 3);
     }
 }
-var plannedDeparture = 'February 20, 2017';
-var marsFlight = new MarsFlight(plannedDeparture);
-var fastMarsFlight = new FastMarsFlight(plannedDeparture);
+let plannedDeparture = 'February 20, 2017';
+let marsFlight = new MarsFlight(plannedDeparture);
+let fastMarsFlight = new FastMarsFlight(plannedDeparture);
 
 console.log(`The RyanAir Mars flight will take ca. ${marsFlight.durationInDays()} days (ETA: ${marsFlight.getInboundDate()}).`);
 
