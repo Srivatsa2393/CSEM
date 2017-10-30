@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/objects\\object-literal.js"
+            "program": "${workspaceFolder}/objects/flight-es2015.js"
         }
     ]
 }
