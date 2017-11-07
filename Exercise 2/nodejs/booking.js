@@ -1,3 +1,4 @@
+'use strict'
 const events = require('events');
 
 let em = new events.EventEmitter();
