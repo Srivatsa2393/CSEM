@@ -6,6 +6,7 @@
 // Please rewrite the code using ES2015 syntax
 // to fix the issue.
 
+'use strict'
 var hotelChain = {
   _name: 'Vulcan Inn',
   _hotels: [{ location: 'Mars' }, { location: 'Jupiter' }],

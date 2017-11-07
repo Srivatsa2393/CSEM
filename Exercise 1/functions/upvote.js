@@ -3,6 +3,7 @@
 //   1. voters have a certain amount of karma that they can spend on upvotes
 //   2. voters cannot upvote too quickly, i.e.,
 //      not within 5 seconds after a previous upvote
+'use strict'
 function up(karma) {
   let votedTime = undefined;
   return function (upvote) {

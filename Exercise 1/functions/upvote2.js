@@ -6,7 +6,7 @@
 
 // In addition to the previous upvote closure, voters can recharge
 // their karma with a recharge(number) method
-
+'use strict'
 function up(karma) {
   let votedTime = undefined;
   return {

@@ -1,5 +1,5 @@
 // Object-literal style object creation
-
+'use strict'
 function Cat(meow) {
   this.meow = meow;
 }

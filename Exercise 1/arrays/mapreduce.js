@@ -3,6 +3,7 @@
 // Sum of (word occurrences in a doc * weight of the doc)
 
 // The document array contains nested [text,weight] arrays.
+'use strict'
 const documents = [
   ['Hello world', 3],
   ['Hello foo', 1],

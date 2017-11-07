@@ -1,4 +1,5 @@
 // TODO: Re-implement flight.js using ES2015
+'use strict'
 class MarsFlight {
     constructor(outbounddate, speed) {
         this.speed = speed || 1;
