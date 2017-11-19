@@ -10,8 +10,8 @@ let server = http.createServer((req, res) => {
   console.log(`${method} ${url}`);
   if (method === 'GET' && url === '/foo') {
     // TODO: implement missing code
-    fs.readFile(PATH,(err,data)=>{
-      res.writeHead(200,{'Content-Type':'text/html'});
+    fs.readFile(PATH, (err, data) => {
+      res.writeHead(200, { 'Content-Type': 'text/html' });
       res.write(data);
       res.end();
     });
