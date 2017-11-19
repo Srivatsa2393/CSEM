@@ -10,7 +10,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/test/client.js"
+            "program": "${workspaceFolder}/Exercise 2/nodejs-express/index.js"
         }
     ]
 }
