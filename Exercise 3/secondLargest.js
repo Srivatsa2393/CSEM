@@ -17,3 +17,12 @@ function getSecondLargest(nums) {
     }
     return second == -1 ? null : second;
 }
+
+//Using the Array.sort() to find the largest number in the array
+
+function getSecondLargest(nums){
+var secondLargest = nums.sort((a,b) => {
+return b - a;
+})[1];
+return secondLargest;
+}
